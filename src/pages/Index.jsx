@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Container, Heading, Text, VStack, Image, useColorModeValue, Flex } from "@chakra-ui/react";
+import { Box, Button, Container, Heading, Text, VStack, Image, useColorModeValue, Flex, HStack } from "@chakra-ui/react";
 import { FaArrowRight, FaMobileAlt } from "react-icons/fa";
 
 const Index = () => {
@@ -9,10 +9,33 @@ const Index = () => {
   return (
     <Container maxW="container.xl" p={0}>
       <VStack w="full" h="100vh" p={10} spacing={10} alignItems="flex-start" bg={bg}>
-        <Flex w="full" justifyContent="space-between" alignItems="center" as="nav">
+        <Flex as="nav" w="full" justifyContent="space-between" alignItems="center">
           <Heading size="lg" color={color}>
             AppName
           </Heading>
+          <HStack spacing={4}>
+            <Button variant="ghost" color={color}>
+              Home
+            </Button>
+            <Button variant="ghost" color={color}>
+              Über uns
+            </Button>
+            <Button variant="ghost" color={color}>
+              Dienstleistungen
+            </Button>
+            <Button variant="ghost" color={color}>
+              Projekte
+            </Button>
+            <Button variant="ghost" color={color}>
+              Für Unternehmen
+            </Button>
+            <Button variant="ghost" color={color}>
+              Ressourcen
+            </Button>
+            <Button variant="ghost" color={color}>
+              Kontakt
+            </Button>
+          </HStack>
           <Button variant="solid" bgColor="brand.900" color="brand.800" rightIcon={<FaArrowRight />}>
             Get Started
           </Button>
