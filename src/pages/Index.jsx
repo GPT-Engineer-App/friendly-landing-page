@@ -3,8 +3,8 @@ import { Box, Button, Container, Heading, Text, VStack, Image, useColorModeValue
 import { FaArrowRight, FaMobileAlt } from "react-icons/fa";
 
 const Index = () => {
-  const bg = useColorModeValue("gray.50", "gray.800");
-  const color = useColorModeValue("gray.800", "white");
+  const bg = useColorModeValue("brand.600", "brand.700"); // ProBau Light Gray for light mode and ProBau Dark Gray for dark mode
+  const color = useColorModeValue("brand.700", "brand.800"); // ProBau Dark Gray for light mode and ProBau White for dark mode
 
   return (
     <Container maxW="container.xl" p={0}>
@@ -13,7 +13,7 @@ const Index = () => {
           <Heading size="lg" color={color}>
             AppName
           </Heading>
-          <Button variant="solid" colorScheme="blue" rightIcon={<FaArrowRight />}>
+          <Button variant="solid" bgColor="brand.900" color="brand.800" rightIcon={<FaArrowRight />}>
             Get Started
           </Button>
         </Flex>
@@ -25,7 +25,7 @@ const Index = () => {
             <Text fontSize="lg" color={color}>
               AppName is your ultimate platform for managing tasks, connecting with people, and achieving your goals.
             </Text>
-            <Button size="lg" leftIcon={<FaMobileAlt />} colorScheme="blue" variant="solid">
+            <Button size="lg" leftIcon={<FaMobileAlt />} bgColor="brand.900" color="brand.800" variant="solid">
               Download the App
             </Button>
           </VStack>
