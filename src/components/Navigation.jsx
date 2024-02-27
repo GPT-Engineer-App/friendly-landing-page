@@ -33,9 +33,6 @@ const Navigation = () => {
           Kontakt
         </Box>
       </Stack>
-      <Button variant="solid" bgColor="brand.900" color="brand.800" rightIcon={<FaArrowRight />}>
-        Get Started
-      </Button>
     </Flex>
   );
 };
