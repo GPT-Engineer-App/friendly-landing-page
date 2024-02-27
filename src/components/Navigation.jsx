@@ -8,7 +8,7 @@ const Navigation = () => {
   return (
     <Flex as="nav" w="full" justifyContent="space-between" alignItems="center">
       <Heading size="lg" color={color}>
-        AppName
+        ProBau
       </Heading>
       <Stack direction="row" spacing={4}>
         <Box as="a" href="#" p={2} color={color}>

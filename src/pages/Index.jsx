@@ -11,7 +11,7 @@ const Index = () => {
       <VStack w="full" h="100vh" p={10} spacing={10} alignItems="flex-start" bg={bg}>
         <Flex as="nav" w="full" justifyContent="space-between" alignItems="center">
           <Heading size="lg" color={color}>
-            AppName
+            ProBau
           </Heading>
           <HStack spacing={4}>
             <Button variant="ghost" color={color}>
@@ -43,10 +43,10 @@ const Index = () => {
         <Box w="full" py={10}>
           <VStack spacing={3} w="full" maxW="lg" alignItems="flex-start">
             <Heading color={color} size="2xl">
-              Simplify Your Life with AppName
+              Simplify Your Life with ProBau
             </Heading>
             <Text fontSize="lg" color={color}>
-              AppName is your ultimate platform for managing tasks, connecting with people, and achieving your goals.
+              ProBau is your ultimate platform for managing tasks, connecting with people, and achieving your goals.
             </Text>
             <Button size="lg" leftIcon={<FaMobileAlt />} bgColor="brand.900" color="brand.800" variant="solid">
               Download the App
