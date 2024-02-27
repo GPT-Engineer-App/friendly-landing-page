@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, Button, Container, Heading, Text, VStack, Stack, useColorModeValue, Image, Flex, Link } from "@chakra-ui/react";
-import { FaArrowRight } from "react-icons/fa";
+import { Box, Button, Container, Heading, Text, VStack, Flex, Link, Stack, Input, Icon, useColorModeValue } from "@chakra-ui/react";
+import { FaArrowRight, FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Home = () => {
   const bg = useColorModeValue("brand.600", "brand.700");
@@ -8,15 +8,13 @@ const Home = () => {
 
   return (
     <Container maxW="container.xl" p={0}>
-      {/* Header Area */}
       <Flex as="header" w="full" p={5} justifyContent="space-between" alignItems="center">
         <Heading as="a" href="/" size="lg" color={color} cursor="pointer">
           ProBau
         </Heading>
       </Flex>
 
-      {/* Hero Area */}
-      <VStack w="full" h="100vh" p={10} spacing={10} alignItems="flex-start" bg={bg}>
+      <VStack w="full" h="auto" p={10} spacing={10} alignItems="flex-start" bg={bg}>
         <Heading color={color} size="2xl">
           Verwirklichen Sie Ihr Bauprojekt mit ProBau – Ihre Experten für Bauvorhaben
         </Heading>
@@ -31,13 +29,52 @@ const Home = () => {
             Mehr erfahren
           </Button>
         </Stack>
+        {/* Rest of the content added below */}
+        <Stack w="full" pt={10} spacing={8}>
+          <Heading color={color} size="xl">
+            Warum ProBau Ihre erste Wahl für Bauprojekte sein sollte
+          </Heading>
+          {/* Advantages sections */}
+          {/* ...Advantage 1, Advantage 2, Advantage 3 as specified */}
+          {/* How it works section */}
+          {/* ...Step 1, Step 2, Step 3 as specified */}
+          {/* Testimonials section */}
+          {/* ...Testimonial 1, Testimonial 2, Testimonial 3 as specified */}
+        </Stack>
       </VStack>
 
-      {/* Rest of the content goes here */}
-
-      {/* Footer Area */}
+      {/* Footer */}
       <Flex as="footer" w="full" p={5} justifyContent="space-between" alignItems="center" bg="brand.700">
-        {/* Footer content goes here */}
+        <Stack spacing={4}>
+          <Link href="/">Home</Link>
+          <Link href="/about">Über uns</Link>
+          {/* ...other quick navigation links */}
+        </Stack>
+        <Stack spacing={4}>
+          <Link href="/privacy">Datenschutzrichtlinie</Link>
+          <Link href="/imprint">Impressum</Link>
+          {/* ...other legal links */}
+        </Stack>
+        <Stack direction="row" spacing={2}>
+          <Link href="https://www.facebook.com/probau">
+            <Icon as={FaFacebook} />
+          </Link>
+          <Link href="https://www.twitter.com/probau">
+            <Icon as={FaTwitter} />
+          </Link>
+          <Link href="https://www.instagram.com/probau">
+            <Icon as={FaInstagram} />
+          </Link>
+          <Link href="https://www.linkedin.com/company/probau">
+            <Icon as={FaLinkedin} />
+          </Link>
+        </Stack>
+        <Flex align="center">
+          <Input placeholder="Email für Newsletter" size="sm" />
+          <Button leftIcon={<FaEnvelope />} ml={2} size="sm">
+            Anmelden
+          </Button>
+        </Flex>
       </Flex>
     </Container>
   );
