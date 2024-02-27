@@ -18,7 +18,7 @@ const Home = () => {
           <Link href="/" p={2} color={color}>
             Home
           </Link>
-          <Link href="#about" p={2} color={color}>
+          <Link href="/ueber-uns" p={2} color={color}>
             Über uns
           </Link>
           <Link href="#services" p={2} color={color}>
