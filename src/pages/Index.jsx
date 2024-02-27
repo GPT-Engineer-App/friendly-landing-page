@@ -1,5 +1,7 @@
 import React from "react";
 import { Box, Button, Container, Heading, Text, VStack, Image, useColorModeValue, Flex, HStack } from "@chakra-ui/react";
+import Home from "./Home.jsx";
+
 import { FaArrowRight, FaMobileAlt } from "react-icons/fa";
 
 const Index = () => {
